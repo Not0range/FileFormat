@@ -79,8 +79,8 @@ namespace FormatFile
             int pos = 0;
             foreach (Match m in mc)
             {
-                sentences.Add(new Sentence(text.Substring(pos, m.Index - pos + 1)));
-                pos = m.Index + m.Length;
+                sentences.Add(new Sentence(text.Substring(pos, m.Index - pos + m.Length)));
+                pos = m.Index + m.Length + 1;
             }
             this.sentences = sentences.ToArray();
         }
@@ -112,7 +112,7 @@ namespace FormatFile
             StringBuilder builder = new StringBuilder(text.Trim());
             builder.Insert(0, builder[0].ToString().ToUpper()).Remove(1, 1);//Первая заглавная
             builder.Replace(Environment.NewLine, "");//Удаление концов строк
-            MatchCollection mc = Regex.Matches(text, @"([\.,:;?!]+)([^ ])");//После знаков препинания пробелы
+            MatchCollection mc = Regex.Matches(text, @"([\.,:;?!]+)([^ \.,:;?!])");//После знаков препинания пробелы
             foreach (Match m in mc)
                 builder.Replace(m.Value, m.Groups[1].Value + ' ' + m.Groups[2].Value);
             mc = Regex.Matches(text, @" ([\.,:;?!]+)");//Перед знаками препинания нет пробелов
