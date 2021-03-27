@@ -1,0 +1,9 @@
+D:\Projects\Visual Studio\FormatFile\bin\Debug\FormatFile.exe
+D:\Projects\Visual Studio\FormatFile\bin\Debug\FormatFile.pdb
+D:\Projects\Visual Studio\FormatFile\obj\Debug\FormatFile.csprojAssemblyReference.cache
+D:\Projects\Visual Studio\FormatFile\obj\Debug\FormatFile.MainForm.resources
+D:\Projects\Visual Studio\FormatFile\obj\Debug\FormatFile.Properties.Resources.resources
+D:\Projects\Visual Studio\FormatFile\obj\Debug\FormatFile.csproj.GenerateResource.cache
+D:\Projects\Visual Studio\FormatFile\obj\Debug\FormatFile.csproj.CoreCompileInputs.cache
+D:\Projects\Visual Studio\FormatFile\obj\Debug\FormatFile.exe
+D:\Projects\Visual Studio\FormatFile\obj\Debug\FormatFile.pdb
